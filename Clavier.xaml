@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="freetelec.MyPage">
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="freetelec.Clavier">
 <ContentPage.Padding>
 <Thickness Bottom="10" Top="10" Left="10" Right="10" />
 </ContentPage.Padding>
@@ -10,6 +10,9 @@
 </Style>
 
 </ResourceDictionary></ContentPage.Resources>
+<ContentPage.ToolbarItems>
+<ToolbarItem Icon="drawable/settings.png" x:Name="tisettings"></ToolbarItem>
+</ContentPage.ToolbarItems>
 	<ContentPage.Content>
 	<ScrollView>
 	<StackLayout>
@@ -63,7 +66,7 @@
 	</StackLayout>
 	<StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" >
 	<Button x:Name="bt_mute" Text="Muet" Clicked="OnKeyClick" FontSize="20"  />
-	<Button x:Name="bt_rec" Text="Enreg." Clicked="OnKeyClick" FontSize="20" />
+	<Button x:Name="bt_rec" Image="drawable/rec.png" Clicked="OnKeyClick" FontSize="20" />
 	<Button x:Name="bt_bwd" Text="Arrière" Clicked="OnKeyClick" FontSize="20" />
 	<Button x:Name="bt_fwd" Text="Avant" Clicked="OnKeyClick" FontSize="20" />
 	</StackLayout>

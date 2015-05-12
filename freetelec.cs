@@ -1,6 +1,7 @@
 ﻿using System;
 
 using Xamarin.Forms;
+using Refractored.Xam.Settings;
 
 namespace freetelec
 {
@@ -9,11 +10,9 @@ namespace freetelec
 		public App ()
 		{
 			// The root page of your application
-			MainPage = new MyPage();
+			Clavier.CodeHD1 = CrossSettings.Current.GetValueOrDefault<int>("codehd1");
+			MainPage = new NavigationPage(new Clavier()  { Icon = "drawable/icon.png" } );
 
-			// power list tv
-			// 0-9
-			// back swap
 			// info mail help pip
 			// epg media options
 			// vol_inc vol_dec
@@ -39,6 +38,8 @@ namespace freetelec
 		{
 			// Handle when your app resumes
 		}
+
+
 	}
 }
 

@@ -5,22 +5,35 @@ using Xamarin.Forms;
 using System.Threading.Tasks;
 using System.Net;
 using System.Diagnostics;
+using Refractored.Xam.Settings;
 
 
 namespace freetelec
 {
-	public partial class MyPage : ContentPage
+	public partial class Clavier : ContentPage
 	{
-		public MyPage ()
+		private static int codeHd1=0;
+
+		public static int CodeHD1 { 
+			get { return codeHd1; }
+			set { codeHd1 = value;
+				CrossSettings.Current.AddOrUpdateValue ("codehd1", codeHd1);
+			}
+		}
+				
+		public Clavier ()
 		{
 			InitializeComponent ();
-
+			codeHd1 = CrossSettings.Current.GetValueOrDefault ("codehd1", 0);
 			// http://hd1.freebox.fr/pub/remote_control?key=&code=&long=&repeat=
 			// http://www.universfreebox.com/article/10808/Comment-creer-un-telecommande-virtuelle-pour-la-Freebox
 				
 			// appui long : long=true
 			// repetition: repeat=3
-
+			tisettings.Clicked += (object sender, EventArgs e) => 
+			{
+				Navigation.PushAsync(new Settings());
+			};
 			Keys = new Dictionary<object, string> ();
 			Keys.Add (bt_1, "1");
 			Keys.Add (bt_2, "1");
@@ -62,7 +75,7 @@ namespace freetelec
 			HttpWebRequest rq = (HttpWebRequest)HttpWebRequest.Create (
 				                    string.Format (
 					                    "http://hd1.freebox.fr/pub/remote_control?code={0}&key={1}",
-					                    "41322886",	key));
+					codeHd1,	key));
 			rq.BeginGetResponse (OnHdResponse, rq);
 		}
 
