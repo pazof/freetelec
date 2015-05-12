@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "freetelec", "freetelec.csproj", "{C663FE8B-598F-432B-962D-301562BB4F4A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "freetelec.Droid", "Droid\freetelec.Droid.csproj", "{17774EA3-FD80-449C-8B84-23E489E17743}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "freetelec.UITests", "UITests\freetelec.UITests.csproj", "{5E77FE0C-4D0B-4B04-B152-FBB26973CBF1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{17774EA3-FD80-449C-8B84-23E489E17743}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17774EA3-FD80-449C-8B84-23E489E17743}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17774EA3-FD80-449C-8B84-23E489E17743}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17774EA3-FD80-449C-8B84-23E489E17743}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E77FE0C-4D0B-4B04-B152-FBB26973CBF1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E77FE0C-4D0B-4B04-B152-FBB26973CBF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E77FE0C-4D0B-4B04-B152-FBB26973CBF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E77FE0C-4D0B-4B04-B152-FBB26973CBF1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C663FE8B-598F-432B-962D-301562BB4F4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C663FE8B-598F-432B-962D-301562BB4F4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C663FE8B-598F-432B-962D-301562BB4F4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C663FE8B-598F-432B-962D-301562BB4F4A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
