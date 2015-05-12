@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="freetelec.MyPage">
+<ContentPage.Padding>
+<Thickness Bottom="10" Top="10" Left="10" Right="10" />
+</ContentPage.Padding>
+<ContentPage.Resources><ResourceDictionary>
+<Style TargetType="Button">
+<Setter Property="FontSize" Value="Large"/>
+<Setter Property="FontAttributes" Value="Bold"/>
+</Style>
+
+</ResourceDictionary></ContentPage.Resources>
+	<ContentPage.Content>
+	<ScrollView>
+	<StackLayout>
+	<StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+	<Button x:Name="bt_tv" Text="AV" FontSize="18" Clicked="OnKeyClick" HorizontalOptions="StartAndExpand" />
+	<Button x:Name="bt_power" Text="on/off" FontSize="18" Clicked="OnKeyClick" HorizontalOptions="EndAndExpand" />
+	</StackLayout>
+	<StackLayout Orientation="Horizontal">
+	<Button x:Name="bt_1" Clicked="OnKeyClick" Text="1" HorizontalOptions="StartAndExpand"/>
+	<Button x:Name="bt_2" Clicked="OnKeyClick" Text="2" HorizontalOptions="CenterAndExpand"/>
+	<Button x:Name="bt_3" Clicked="OnKeyClick"  Text="3" HorizontalOptions="EndAndExpand"/>
+	</StackLayout>
+	<StackLayout Orientation="Horizontal">
+	<Button x:Name="bt_4" Clicked="OnKeyClick" Text="4" HorizontalOptions="StartAndExpand"/>
+	<Button x:Name="bt_5" Clicked="OnKeyClick" Text="5" HorizontalOptions="CenterAndExpand"/>
+	<Button x:Name="bt_6" Clicked="OnKeyClick" Text="6" HorizontalOptions="EndAndExpand"/>
+	</StackLayout>
+	<StackLayout Orientation="Horizontal">
+	<Button x:Name="bt_7" Clicked="OnKeyClick" Text="7" HorizontalOptions="StartAndExpand"/>
+	<Button x:Name="bt_8" Clicked="OnKeyClick" Text="8" HorizontalOptions="CenterAndExpand"/>
+	<Button x:Name="bt_9" Clicked="OnKeyClick" Text="9" HorizontalOptions="EndAndExpand" />
+	</StackLayout>
+	<Button x:Name="bt_0" Text="0" Clicked="OnKeyClick" />
+	<StackLayout Orientation="Horizontal">
+	<Button x:Name="bt_red" Clicked="OnKeyClick" Image="drawable/red.png" HorizontalOptions="StartAndExpand"/>
+	<Button Clicked="OnKeyClick" x:Name="bt_up" Image="drawable/up.png" HorizontalOptions="CenterAndExpand"/>
+	<Button Clicked="OnKeyClick" x:Name="bt_blue" Image="drawable/blue.png" HorizontalOptions="EndAndExpand"/>
+	</StackLayout>
+	<StackLayout Orientation="Horizontal">
+	<Button x:Name="bt_left" Clicked="OnKeyClick"  Image="drawable/left.png" HorizontalOptions="StartAndExpand"/>
+	<Button x:Name="bt_ok"  Clicked="OnKeyClick" Text="Ok" FontSize="36"  HorizontalOptions="CenterAndExpand"/>
+	<Button x:Name="bt_right" Clicked="OnKeyClick"  Image="drawable/right.png" HorizontalOptions="EndAndExpand"/>
+	</StackLayout>
+	<StackLayout Orientation="Horizontal">
+	<Button x:Name="bt_green" Clicked="OnKeyClick" Image="drawable/green.png" HorizontalOptions="StartAndExpand"/>
+	<Button x:Name="bt_down" Clicked="OnKeyClick"  Image="drawable/down.png" HorizontalOptions="CenterAndExpand"/>
+	<Button x:Name="bt_yellow"  Clicked="OnKeyClick" Image="drawable/yellow.png" HorizontalOptions="EndAndExpand"/>
+	</StackLayout>
+	<Button x:Name="bt_home" Clicked="OnKeyClick" Image="drawble/home.png"/>
+	<StackLayout Orientation="Horizontal" HorizontalOptions="Fill">
+	<StackLayout Orientation="Vertical" HorizontalOptions="StartAndExpand">
+	<Button x:Name="bt_vol_inc" Clicked="OnKeyClick" VerticalOptions="StartAndExpand" Image="drawable/plus.png"/>
+	<Label Text="Volume" VerticalOptions="Center" FontSize="18" HorizontalOptions="Center" />
+	<Button x:Name="bt_vol_dec" Clicked="OnKeyClick" VerticalOptions="End" Image="drawable/moins.png"/>
+	</StackLayout>
+	<StackLayout Orientation="Vertical" HorizontalOptions="EndAndExpand">
+	<Button x:Name="bt_prgm_inc" Clicked="OnKeyClick" HorizontalOptions="StartAndExpand" Image="drawable/plus.png"/>
+	<Label Text="Programme" VerticalOptions="Center" HorizontalOptions="Center" FontSize="18" />
+	<Button x:Name="bt_prgm_dec" Clicked="OnKeyClick" HorizontalOptions="EndAndExpand" Image="drawable/moins.png" />
+	</StackLayout>
+	</StackLayout>
+	<StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" >
+	<Button x:Name="bt_mute" Text="Muet" Clicked="OnKeyClick" FontSize="20"  />
+	<Button x:Name="bt_rec" Text="Enreg." Clicked="OnKeyClick" FontSize="20" />
+	<Button x:Name="bt_bwd" Text="Arrière" Clicked="OnKeyClick" FontSize="20" />
+	<Button x:Name="bt_fwd" Text="Avant" Clicked="OnKeyClick" FontSize="20" />
+	</StackLayout>
+	<StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+	<Button x:Name="bt_prev" Image="drawable/prev.png" Clicked="OnKeyClick" HorizontalOptions="StartAndExpand"/>
+	<Button x:Name="bt_play" Image="drawable/play.png" Clicked="OnKeyClick" HorizontalOptions="CenterAndExpand" />
+	<Button x:Name="bt_next" Image="drawable/next.png" Clicked="OnKeyClick" HorizontalOptions="EndAndExpand" />
+	</StackLayout>
+	</StackLayout>
+	</ScrollView>
+	</ContentPage.Content>
+
+</ContentPage>
