@@ -36,15 +36,15 @@ namespace freetelec
 			};
 			Keys = new Dictionary<object, string> ();
 			Keys.Add (bt_1, "1");
-			Keys.Add (bt_2, "1");
-			Keys.Add (bt_3, "1");
-			Keys.Add (bt_4, "1");
-			Keys.Add (bt_5, "1");
-			Keys.Add (bt_6, "1");
-			Keys.Add (bt_7, "1");
-			Keys.Add (bt_8, "1");
-			Keys.Add (bt_9, "1");
-			Keys.Add (bt_0, "1");
+			Keys.Add (bt_2, "2");
+			Keys.Add (bt_3, "3");
+			Keys.Add (bt_4, "4");
+			Keys.Add (bt_5, "5");
+			Keys.Add (bt_6, "6");
+			Keys.Add (bt_7, "7");
+			Keys.Add (bt_8, "8");
+			Keys.Add (bt_9, "9");
+			Keys.Add (bt_0, "0");
 			Keys.Add (bt_red, "red");
 			Keys.Add (bt_green, "green");
 			Keys.Add (bt_blue, "blue");
@@ -68,7 +68,10 @@ namespace freetelec
 			Keys.Add (bt_fwd, "fwd");
 			Keys.Add (bt_bwd, "bwd");
 			Keys.Add (bt_play, "play");
-
+			Keys.Add (bt_info, "info");Keys.Add (bt_mail, "mail");
+			Keys.Add (bt_pip, "pip");Keys.Add (bt_media, "media");
+			Keys.Add (bt_help, "help");Keys.Add (bt_epg, "epg");
+			Keys.Add (bt_options, "options");
 		}
 
 		void KeyHit(string key, bool lgHit=false, int repeat=1) {

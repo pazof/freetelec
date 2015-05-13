@@ -4,6 +4,8 @@ using Android.App;
 
 // Information about this assembly is defined by the following attributes.
 // Change them to the values specific to your project.
+using Xamarin.Forms;
+using freetelec;
 
 [assembly: AssemblyTitle ("freetelec.Droid")]
 [assembly: AssemblyDescription ("")]
@@ -26,3 +28,4 @@ using Android.App;
 //[assembly: AssemblyDelaySign(false)]
 //[assembly: AssemblyKeyFile("")]
 
+[assembly: ExportRenderer (typeof (MyScrollView), typeof (InnerAndroidScrollViewRenderer))]

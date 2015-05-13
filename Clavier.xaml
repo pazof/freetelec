@@ -1,5 +1,9 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="freetelec.Clavier">
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+x:Class="freetelec.Clavier"
+xmlns:local="clr-namespace:freetelec;assembly=freetelec"
+                >
 <ContentPage.Padding>
 <Thickness Bottom="10" Top="10" Left="10" Right="10" />
 </ContentPage.Padding>
@@ -75,6 +79,18 @@
 	<Button x:Name="bt_play" Image="drawable/play.png" Clicked="OnKeyClick" HorizontalOptions="CenterAndExpand" />
 	<Button x:Name="bt_next" Image="drawable/next.png" Clicked="OnKeyClick" HorizontalOptions="EndAndExpand" />
 	</StackLayout>
+	<local:MyScrollView Orientation="Horizontal">
+	<StackLayout Orientation="Horizontal">
+	<Button x:Name="bt_info" Text="info" Clicked="OnKeyClick" />
+	<Button x:Name="bt_mail" Text="mail" Clicked="OnKeyClick" />
+	<Button x:Name="bt_help" Text="help" Clicked="OnKeyClick" />
+	<Button x:Name="bt_pip" Text="pip" Clicked="OnKeyClick" />
+	<Button x:Name="bt_epg" Text="epg" Clicked="OnKeyClick" />
+	<Button x:Name="bt_media" Text="media" Clicked="OnKeyClick" />
+	<Button x:Name="bt_options" Text="options" Clicked="OnKeyClick" />
+
+	</StackLayout>
+	</local:MyScrollView>
 	</StackLayout>
 	</ScrollView>
 	</ContentPage.Content>
