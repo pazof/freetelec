@@ -28,4 +28,5 @@ using freetelec;
 //[assembly: AssemblyDelaySign(false)]
 //[assembly: AssemblyKeyFile("")]
 
-[assembly: ExportRenderer (typeof (MyScrollView), typeof (InnerAndroidScrollViewRenderer))]
+[assembly: ExportRenderer (typeof (ScrollView), typeof (InnerAndroidScrollViewRenderer))]
+[assembly: Application(Icon = "@drawable/icon")]

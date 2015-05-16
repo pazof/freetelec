@@ -79,7 +79,7 @@ xmlns:local="clr-namespace:freetelec;assembly=freetelec"
 	<Button x:Name="bt_play" Image="drawable/play.png" Clicked="OnKeyClick" HorizontalOptions="CenterAndExpand" />
 	<Button x:Name="bt_next" Image="drawable/next.png" Clicked="OnKeyClick" HorizontalOptions="EndAndExpand" />
 	</StackLayout>
-	<local:MyScrollView Orientation="Horizontal">
+	<ScrollView Orientation="Horizontal">
 	<StackLayout Orientation="Horizontal">
 	<Button x:Name="bt_info" Text="info" Clicked="OnKeyClick" />
 	<Button x:Name="bt_mail" Text="mail" Clicked="OnKeyClick" />
@@ -90,7 +90,7 @@ xmlns:local="clr-namespace:freetelec;assembly=freetelec"
 	<Button x:Name="bt_options" Text="options" Clicked="OnKeyClick" />
 
 	</StackLayout>
-	</local:MyScrollView>
+	</ScrollView>
 	</StackLayout>
 	</ScrollView>
 	</ContentPage.Content>

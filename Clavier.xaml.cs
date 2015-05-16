@@ -95,6 +95,10 @@ namespace freetelec
 		void OnHdResponse(IAsyncResult result)
 		{
 			HttpWebRequest rq = (HttpWebRequest) result.AsyncState;
+			Debug.WriteLineIf (rq.HaveResponse,"No resonse from freebox");
+			if (!rq.HaveResponse) {
+				DisplayAlert ("Freetelec", "No connection", null);
+			}
 			rq.Abort ();
 		}
 
